@@ -128,7 +128,6 @@ public class ToolTip {
         private int gravity;
         private int color;
         private int pointerSize;
-        private boolean dismissOnTouch;
 
         public Builder(Context context) {
             this.context = context;
@@ -156,11 +155,6 @@ public class ToolTip {
 
         public Builder anchor(View anchor) {
             this.anchor = anchor;
-            return this;
-        }
-
-        public Builder dismissOnTouch(boolean dismiss) {
-            this.dismissOnTouch = dismiss;
             return this;
         }
 
