@@ -19,7 +19,6 @@ public class ToolTip {
     private int mGravity;
     private int mColor;
     private int mPointerSize;
-    private boolean mDismissOnTouch;
 
     private View mView;
 
@@ -77,14 +76,6 @@ public class ToolTip {
 
     public void setPointerSize(int pointerSize) {
         mPointerSize = pointerSize;
-    }
-
-    public boolean isDismissOnTouch() {
-        return mDismissOnTouch;
-    }
-
-    public void setDismissOnTouch(boolean dismissOnTouch) {
-        mDismissOnTouch = dismissOnTouch;
     }
 
     /**
@@ -185,7 +176,6 @@ public class ToolTip {
         setPointerSize(builder.pointerSize);
         setAnchorView(builder.anchor);
         setView(makeView(builder.context));
-        setDismissOnTouch(builder.dismissOnTouch);
     }
 
 }
